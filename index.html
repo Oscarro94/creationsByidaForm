@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreationsbyIda</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/creations.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6894afcfd8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <div class="image">
+    <img src="./img/creationbyida.png" alt="creationsbyida">
+    </div>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action="#" />
+    <fieldset>
+      <label for="first-name"
+        >Enter Your Name:
+        <input name="f-name" id="first-name" type="text" required
+      /></label>
+      <label for="last-name"
+        >Enter Your Last Name:
+        <input name="l-name" id="last-name" type="text" required
+      /></label>
+      <label for="email"
+        >Enter Your Email:
+        <input name="correo" id="email" type="email" required
+      /></label>
+      <label for="new-password"
+        >Create a New Password:
+        <input
+          name="pass"
+          id="new-password"
+          type="password"
+          required
+          pattern="[a-z0-5]{8,}"
+      /></label>
+    </fieldset>
+
+    <fieldset>
+      <label for="personal-account">
+        <input class="inline"  id="personal-account" type="radio" name="account-type" />
+        Personal Account
+      </label>
+      <label for="business-account">
+        <input class="inline" id="business-account" type="radio" name="account-type" />
+        Business Account
+      </label>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" name="term" type="checkbox" required />
+        I accept the terms and conditions
+        <a href="#"
+          >terms and conditions</a
+        ></label
+      >
+    </fieldset>
+    <fieldset>
+      <label for="profile-picture"
+        >Upload a profile picture:
+        <input name="pic" id="profile-picture" type="file"
+      /></label>
+      <label for="age"
+        >Input your age:
+        <input name="edad" id="age" type="number" min="13" max="120"
+      /></label>
+      <label for="referrer"
+        >How did you hear about us?
+        <select name="refe" id="referrer">
+          <option value="">(select one)</option>
+          <option value="1">Instagram</option>
+          <option value="2">Twitter</option>
+          <option value="3">Facebook</option>
+          <option value="2">Other</option>
+        </select>
+      </label>
+      <label for="bio"
+        >Provide a bio:
+        <textarea
+          name="area"
+          id="bio"
+          cols="30"
+          rows="3"
+          placeholder="I like lettering everywhere..."
+        ></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit" />
+    <section class="bg-color">
+          <h2>Social Media</h2>
+          <p>You can find me on</p>
+          <ul class="social-ul"> 
+          <li><a href="https://instagram.com/creation.byida?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/creation.byida?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          </section>
+
+          <footer>
+          <p>Made with <i class="fas fa-heart"></i> by creation.byida, Copyright &copy; 2023</p>
+          </footer>
+        
+  </body>
+</html>
